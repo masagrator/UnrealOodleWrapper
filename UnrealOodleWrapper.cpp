@@ -11,7 +11,7 @@ int printUsage() {
     std::cerr << "-c %d %d:\t\t\tcompress file\n\t\t\t\t1st %d: compression level (from -4 to 9)\n\t\t\t\t2nd %d: compression method (from -1 to 5)\n";
     std::cerr << "-d %d:\t\t\t\tdecompress file\n\t\t\t\t%d: exact decompressed file size\n\t\t\t\t(0 is not accepted, wrong value will return error)\n\n";
     std::cerr << "Other:\n";
-    std::cerr << "file_path/stdin=%d:\t\tyou can either provide input file path,\n\t\t\t\tor use stdin by writing \"stdin=%d\",\n\t\t\t\twhere %d is size of stdin binary data\n";
+    std::cerr << "file_path/stdin=%d:\t\tyou can either provide input file path,\n\t\t\t\tor use stdin by writing \"stdin=%d\",\n\t\t\t\twhere %d is size of stdin binary data in bytes\n";
     std::cerr << "output_file_path/stdout:\tyou can either provide input file path,\n\t\t\t\tor use stdout by writing \"stdout\"\n\n";
     std::cerr << "Compression Levels:\n";
     std::cerr << "<0 = compression ratio < speed\n";
