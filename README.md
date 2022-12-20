@@ -34,7 +34,7 @@ Other:
 file_path/stdin=%d:             you can either provide input file path,
                                 or use stdin by writing "stdin=%d",
                                 where %d is size of stdin binary data in bytes
-output_file_path/stdout:        you can either provide input file path,
+output_file_path/stdout:        you can either provide output file path,
                                 or use stdout by writing "stdout"
 
 Compression Levels:
