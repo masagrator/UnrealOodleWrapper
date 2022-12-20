@@ -24,7 +24,7 @@ int printUsage() {
     std::cerr << "2 = Leviathan (Higher compression than Kraken, slightly slower decompression.)\n";
     std::cerr << "3 = Mermaid (between Kraken & Selkie - crazy fast, still decent compression.)\n";
     std::cerr << "4 = Selkie (Selkie is a super-fast relative of Mermaid. For maximum decode speed.)\n";
-    std::cerr << "5 = Hydra\n";
+    std::cerr << "5 = Hydra\n\n";
     return 1;
 }
 
@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
         addarg = 1;
     }
     else if (strncmp(argv[1], "-d", 2)) {
-        std::cerr << "Wrong option!";
+        std::cerr << "Wrong option!\n";
         return printUsage();
     }
     else {
