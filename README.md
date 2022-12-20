@@ -33,7 +33,7 @@ Option:
 Other:
 file_path/stdin=%d:             you can either provide input file path,
                                 or use stdin by writing "stdin=%d",
-                                where %d is size of stdin binary data
+                                where %d is size of stdin binary data in bytes
 output_file_path/stdout:        you can either provide input file path,
                                 or use stdout by writing "stdout"
 
@@ -50,4 +50,30 @@ Compression Methods:
 3 = Mermaid (between Kraken & Selkie - crazy fast, still decent compression.)
 4 = Selkie (Selkie is a super-fast relative of Mermaid. For maximum decode speed.)
 5 = Hydra
+```
+
+# Examples
+
+- decompress file `test.oodle` that decompressed has size `5578` B and save it as `test.unc`
+```
+UnrealOodleWrapper -d 5578 test.oodle test.unc
+```
+- compress file `test.temp` using `Mermaid method` with `compression level 9` and save it as `test.oodle`
+```
+UnrealOodleWrapper -c 9 3 test.temp test.oodle
+```
+- With python 3 script compress file `test.temp` using `Mermaid method` at `compression level 9` through `stdin` and get result to `stdout`, then save it as `test.oodle`
+```py
+import subprocess
+
+file = open("test.temp", "rb")
+buffer = file.read()
+file.close()
+catch = subprocess.run(["UnrealOodleWrapper.exe", "-c", "9", "3", "stdin=%d" % len(buffer), "stdout"], input=buffer, capture_output=True, text=False)
+if (catch.stderr != b""):
+    print("Error while compressing file!")
+    return 1
+new_file = open("test.oodle", "wb")
+new_file.write(catch.stdout)
+new_file.close()
 ```
