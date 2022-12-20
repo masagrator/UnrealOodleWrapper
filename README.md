@@ -4,7 +4,7 @@ Visual Studio project for linking Unreal Engine Oodle plugin with code
 Download Unreal Engine 4.27+ from Epic Launcher (not tested with 5),
 copy "include" and "lib" folder from Oodle plugin's sdk to root folder of project. 
 
-Default path: 
+Default Oodle sdk path: 
 ```
 X:\Program Files\Epic Games\UE_4.27\Engine\Plugins\Compression\OodleData\Sdks\2.9.0
 ```
