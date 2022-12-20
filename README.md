@@ -1,6 +1,8 @@
 # UnrealOodleWrapper
 Visual Studio project for linking Unreal Engine Oodle plugin with code
 
+Release nor library are included since Oodle is a licensed property of Epic Games Inc. that cannot be shared publicly.
+
 Download Unreal Engine 4.27+ from Epic Launcher (not tested with 5),
 copy "include" and "lib" folders from Oodle plugin's sdk to root folder of project. 
 
