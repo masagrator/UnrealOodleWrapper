@@ -17,7 +17,7 @@ Used setup:
 For additional info while decompressing,
 like what type of compression method was used, you must run tool with debugger.
 
-#Help
+# Help
 ```
 .exe [option] file_path/stdin=%d output_file_path/stdout
 Option:
