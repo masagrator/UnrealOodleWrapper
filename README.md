@@ -1,5 +1,5 @@
 # UnrealOodleWrapper
-Visual Studio project for linking Unreal Engine Oodle plugin with code
+Visual Studio project for linking Unreal Engine Oodle plugin with command tool
 
 Release nor library are included since Oodle is a licensed property of Epic Games Inc. that cannot be shared publicly.
 
